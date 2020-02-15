@@ -1,17 +1,21 @@
-# fib3
+#  fib3 FINAAAAL!!!!
 
 import time
 import matplotlib.pyplot as plt
+import numpy as np
 
-run_time = []
-terms = []
+x1 = []
+y1 = []
+x2 = []
+y2 = []
+
 
 def main():
 
     print("FIBONACCI")
 
-    number = 30
-    terms.append(number)
+    number = 34
+    x1.append(number)
 
 
     print("---- Fibonacci Sequence using Recursion ----")
@@ -24,11 +28,13 @@ def main():
     end_time = time.time()
     recursionRuntime = end_time - start_time
     print("Execution time:", recursionRuntime, "seconds")
-    run_time.append(recursionRuntime)
+    y1.append(recursionRuntime)
+
+    plt.plot(x1,y1, 'ro', label="Recursion")
 
 
-    number = 30
-    terms.append(number)
+    number = 3000
+    x2.append(number)
 
     print("---- Fibonacci Sequence using Iteration ----")
     start_timeiter = time.time()
@@ -40,7 +46,12 @@ def main():
     end_time = time.time()
     iterationRuntime = end_time - start_timeiter
     print("Execution time:", iterationRuntime, "seconds")
-    run_time.append(iterationRuntime)
+    y2.append(iterationRuntime)
+
+    plt.plot(x2,y2, 'bo', label='Iteration')
+
+
+    plt.axis([0, 4500, 0, 12])
 
 
 def fib1(n):
@@ -67,9 +78,11 @@ def fib2(number):
 
 main()
 
-plt.plot(terms,run_time, 'ro')
-plt.xlabel('Fibonacci Numbers')
+plt.xlabel('Fibonacci Numbers Generated')
 plt.ylabel('Execution Time')
-plt.axis([0, 30, 0, 2])
 plt.title("Fibonacci (Runtime)")
+
+
+
+plt.legend()
 plt.show()
