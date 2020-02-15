@@ -1,4 +1,4 @@
-#  fib3 FINAAAAL!!!!
+#  fib3 
 
 import time
 import matplotlib.pyplot as plt
