@@ -15,11 +15,11 @@ def main():
     print("FIBONACCI")
 
     #recursion_1
-    number = 34
-    x1.append(number)
-
 
     print("---- Fibonacci Sequence using Recursion ----")
+    number = int(input("No. of terms: "))
+    x1.append(number)
+
     start_time = time.time()
     for i in range(1, number + 1):
         fibonacci = fib1(i)
@@ -34,10 +34,10 @@ def main():
     plt.plot(x1,y1, 'ro', label="Recursion")
 
     #iteration_1
-    number = 3000
+    print("---- Fibonacci Sequence using Iteration ----")
+    number = int(input("No. of terms: "))
     x2.append(number)
 
-    print("---- Fibonacci Sequence using Iteration ----")
     start_timeiter = time.time()
     for i in range(1, number + 1):
         fibonacci = fib2(i)
@@ -56,11 +56,11 @@ def main():
 
 
     #recursion_2
-    number = 21
+    print("---- Fibonacci Sequence using Recursion ----")
+    number = int(input("No. of terms: "))
     x1.append(number)
 
 
-    print("---- Fibonacci Sequence using Recursion ----")
     start_time = time.time()
     for i in range(1, number + 1):
         fibonacci = fib1(i)
@@ -75,10 +75,11 @@ def main():
     plt.plot(x1,y1, 'ro')
 
     #iteration_2
-    number = 1500
+    print("---- Fibonacci Sequence using Iteration ----")
+    number = int(input("No. of terms: "))
     x2.append(number)
 
-    print("---- Fibonacci Sequence using Iteration ----")
+
     start_timeiter = time.time()
     for i in range(1, number + 1):
         fibonacci = fib2(i)
@@ -95,10 +96,11 @@ def main():
     plt.axis([0, 4500, 0, 12])
 
     # recursion_3
-    number = 29
+    print("---- Fibonacci Sequence using Recursion ----")
+    number = int(input("No. of terms: "))
     x1.append(number)
 
-    print("---- Fibonacci Sequence using Recursion ----")
+
     start_time = time.time()
     for i in range(1, number + 1):
         fibonacci = fib1(i)
@@ -113,10 +115,11 @@ def main():
     plt.plot(x1, y1, 'ro')
 
     # iteration_3
-    number = 3500
+    print("---- Fibonacci Sequence using Iteration ----")
+    number = int(input("No. of terms: "))
     x2.append(number)
 
-    print("---- Fibonacci Sequence using Iteration ----")
+
     start_timeiter = time.time()
     for i in range(1, number + 1):
         fibonacci = fib2(i)
@@ -133,10 +136,11 @@ def main():
     plt.axis([0, 4500, 0, 12])
 
     # recursion_4
-    number = 33
+    print("---- Fibonacci Sequence using Recursion ----")
+    number = int(input("No. of terms: "))
     x1.append(number)
 
-    print("---- Fibonacci Sequence using Recursion ----")
+
     start_time = time.time()
     for i in range(1, number + 1):
         fibonacci = fib1(i)
@@ -151,10 +155,11 @@ def main():
     plt.plot(x1, y1, 'ro')
 
     # iteration_4
-    number = 4300
+    print("---- Fibonacci Sequence using Iteration ----")
+    number = int(input("No. of terms: "))
     x2.append(number)
 
-    print("---- Fibonacci Sequence using Iteration ----")
+
     start_timeiter = time.time()
     for i in range(1, number + 1):
         fibonacci = fib2(i)
@@ -171,10 +176,11 @@ def main():
     plt.axis([0, 4500, 0, 12])
 
     # recursion_5
-    number = 25
+    print("---- Fibonacci Sequence using Recursion ----")
+    number = int(input("No. of terms: "))
     x1.append(number)
 
-    print("---- Fibonacci Sequence using Recursion ----")
+
     start_time = time.time()
     for i in range(1, number + 1):
         fibonacci = fib1(i)
@@ -189,10 +195,10 @@ def main():
     plt.plot(x1, y1, 'ro')
 
     # iteration_5
-    number = 685
+    print("---- Fibonacci Sequence using Iteration ----")
+    number = int(input("No. of terms: "))
     x2.append(number)
 
-    print("---- Fibonacci Sequence using Iteration ----")
     start_timeiter = time.time()
     for i in range(1, number + 1):
         fibonacci = fib2(i)
