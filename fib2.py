@@ -1,5 +1,3 @@
-# FINAL FIBONACCI ITERATION
-
 import time
 import matplotlib.pyplot as plt
 
@@ -10,7 +8,8 @@ run_time = []
 
 def iterfib1():
 
-    nterms = int(input("How many terms? "))
+    print("Range from 0 to 40000")
+    nterms = int(input("No. of terms: "))
     start_time = time.time()
     terms.append(nterms)
 
@@ -43,7 +42,9 @@ iterfib1()
 
 def iterfib2():
 
-    nterms = int(input("How many terms? "))
+    print("----------------------------------------------")
+    print("Range from 0 to 40000")
+    nterms = int(input("No. of terms: "))
     start_time = time.time()
     terms.append(nterms)
 
@@ -75,8 +76,9 @@ iterfib2()
 
 
 def iterfib3():
-
-    nterms = int(input("How many terms? "))
+    print("----------------------------------------------")
+    print("Range from 0 to 40000")
+    nterms = int(input("No. of terms: "))
     start_time = time.time()
     terms.append(nterms)
 
@@ -108,8 +110,9 @@ iterfib3()
 
 
 def iterfib4():
-
-    nterms = int(input("How many terms? "))
+    print("----------------------------------------------")
+    print("Range from 0 to 40000")
+    nterms = int(input("No. of terms: "))
     start_time = time.time()
     terms.append(nterms)
 
@@ -141,8 +144,9 @@ iterfib4()
 
 
 def iterfib5():
-
-    nterms = int(input("How many terms? "))
+    print("----------------------------------------------")
+    print("Range from 0 to 40000")
+    nterms = int(input("No. of terms: "))
     start_time = time.time()
     terms.append(nterms)
 
@@ -176,6 +180,6 @@ iterfib5()
 plt.plot(terms,run_time, 'bo')
 plt.xlabel('Integers (Positive)')
 plt.ylabel('Execution Time')
-plt.axis([0, 40000, 0, 10])
+plt.axis([0, 40000, 0, 20])
 plt.title("Fibonacci Graph")
 plt.show()
