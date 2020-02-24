@@ -2,7 +2,6 @@
 
 import time
 import matplotlib.pyplot as plt
-import numpy as np
 
 x1 = []
 y1 = []
@@ -17,7 +16,6 @@ def fib1(n):
 
 
 def fib2(number):
-
 
     fn1 = 1
     fn2 = 1
